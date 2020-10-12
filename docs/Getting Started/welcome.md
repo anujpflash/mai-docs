@@ -37,4 +37,4 @@ Know about the Implementation of Experience Points by Mai
 ---
 
 ## Miscellaneous
-- [Self-hosting Mai Bot](https://mai-san.ml/docs/Getting%20Started/self_host)
+- [Self-hosting Mai Bot](https://mai-san.ml/docs/Getting%20Started/setting_up_your_bot)
