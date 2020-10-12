@@ -1,3 +1,7 @@
+const allDocHomesPaths = [
+  '/docs/',
+];
+
 module.exports = {
   title: 'Mai',
   tagline: 'A Discord Bot Based Around Anime',
@@ -17,7 +21,11 @@ module.exports = {
       textColor: '#091E42', // Defaults to `#000`.
       isCloseable: true, // Defaults to `true`.
   },
-    navbar: {
+   
+
+
+
+ navbar: {
        hideOnScroll: true,
       title: 'Mai - A discord bot',
       logo: {
@@ -31,13 +39,13 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {
-          to: 'docs/About_Me',
-          label: 'About Mai',
+ {
+          to: "About_Me",
+          activeBasePath: '/About_Me',
+          label: 'About Me',
           position: 'left',
-          activeBaseRegex: `/about/`,
         },
-        //{to: 'blog', label: 'Blog', position: 'left'},
+    
         {
           href: 'https://discord.com/oauth2/authorize?client_id=702074452317307061&scope=bot&permissions=1043721303',
           label: 'Invite Now',
@@ -51,7 +59,6 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Mai | Made by Sakurajimai#6742`,
     },
   },
-
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -66,5 +73,5 @@ module.exports = {
         }
       },
     ],
-  ],
+  ]
 };
