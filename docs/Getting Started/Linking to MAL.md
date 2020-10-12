@@ -1,5 +1,5 @@
 ---
-id: linking_to_MAL
+id: linking_to_AL
 title: Linking your User Account to MyAnimeList
 sidebar_label: Linking to MAL
 
