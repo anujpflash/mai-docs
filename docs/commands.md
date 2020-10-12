@@ -52,20 +52,20 @@ sidebar_label: Commands
 | ``m!help [Command Name]``     | Sends the command information for the provided command name                               |
 | ``m!leaderboard``             | Sends the server xp leaderboard [Server and Channel Must be xp enabled]                   |
 | ``m!mai``                     | Sends a random Mai Image                                                                  |
-| ``m!nonxpchannels``           | Displays the list of channels where [xp](https://mai-san.ml/docs/xp_system) is disabled [Server must be xp enabled]            |
+| ``m!nonxpchannels``           | Displays the list of channels where [XP](Features/XP_System.md) is disabled [Server must be xp enabled]            |
 | ``m!rank <@User>``            | Displays own / mentioned user's server xp ranking [Server and channel must be xp enabled] |
 | ``m!suggestion [Suggestion]`` | Send a suggestion for the server [Requires a set suggest channel]                         |
-| ``m!watching``                | Sends the list of anime under the server's [Anischedule Feature](https://mai-san.ml/docs/Anischedule) (if enabled)               |
+| ``m!watching``                | Sends the list of anime under the server's [Anischedule Feature](Features/Anischedule.md) (if enabled)               |
 
 
 ## Economy
-|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCommand&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp| Example
+|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCommand&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|Description
 |--------|------------|
 `m!bal`      | Checks your current wallet and/or bank balance (If you have a bank)  
 `m!bank`      | Register yourself to the bank (If you don't have a bank yet)
 `m!beg`        | Beg for some coins. Don't let pride get in your way to get rich!
 `m!daily`      | Get daily reward from Mai. Remember to keep your streak for increased rewards
-`m!deposit [Amount]` | Deposit some of your money to the bank (If you have a bank) to prevent [overflow](https://mai-san.ml/docs/Economy#overflow)
+`m!deposit [Amount]` | Deposit some of your money to the bank (If you have a bank) to prevent [overflow](Features/Economy.md#overflow)
 `m!find`      | Find some coins around
 `m!register` | Register yourself to the Economy System for free!
 `m!transfer` | Transfer some of your coins to your friend. Both parties have to be registered to a bank!
@@ -119,7 +119,7 @@ sidebar_label: Commands
 ## Owner
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCommand&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp| Description
 --------|------------
-`m!cleanup` | Clears all the list of finished/cancelled anime. see [Anischedule](https://github.com/maisans-maid/Mai/wiki/Anischedule)
+`m!cleanup` | Clears all the list of finished/cancelled anime. see [Anischedule](Features/Anischedule.md)
 `m!eval [code]`    | Executes the provided JS code
 `m!fleave [ServerID]`  | Forces the bot to leave the server based on the provided server ID
 `m!reload [commandName]`  |🛠️ Debugger Tool: Reloads the commands with changes without restarting the bot.
@@ -128,18 +128,18 @@ sidebar_label: Commands
 ## Setup
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCommand&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp| Description
 --------|------------
-`m!disableanisched`  | Disables the [Anisched](https://mai-san.ml/docs/Anischedule) feature on the server
+`m!disableanisched`  | Disables the [Anischedule](Features/Anischedule.md) feature on the server
 `m!economytoggle`  | Toggles the economy system for the server on or off
-`m!setanischedch [#channel]`  | Sets the mentioned channel as the [Anischedule](https://mai-san.ml/docs/Anischedule) Channel for the server
+`m!setanischedch [#channel]`  | Sets the mentioned channel as the [Anischedule](Features/Anischedule.md) Channel for the server
 `m!setinvite [URL] [Description]`  | Set an invite link + description for your server to be advertised whenever the command [`invite`](#bot) is used.
 `m!setmute [@role/ID]`  | Sets the provided role resolvable to the Muted Role
 `m!setsuggestch [#channel]` | Sets the mentioned channel as the stream for suggest channel
 `m!unwatch [URL]`  | Removes an anime show from the watchlist
 `m!watch [URL]` | Adds an anime show to the watchlist
-`m!xpenable [#channel]`  | Enables previously XP-disabled channels. see [XP](https://mai-san.ml/docs/xp_system)
-`m!xpexcempt [#channel]` | Channel Mention(s) | Disables previously XP-enabled channels. see [XP](https://mai-san.ml/docs/xp_system)
-`m!xpreset` |Resets the XP System for the server. see [XP](https://mai-san.ml/docs/xp_system)
-`m!xptoggle` | Toggles the XP System on / off for the server. see [XP](https://mai-san.ml/docs/xp_system)
+`m!xpenable [#channel]`  | Enables previously XP-disabled channels. see [XP](Features/XP_system.md)
+`m!xpexcempt [#channel]` | Channel Mention(s) | Disables previously XP-enabled channels. see [XP](https://mai-san.ml/docs/XP_system.md)
+`m!xpreset` |Resets the XP System for the server. see [XP](https://mai-san.ml/docs/XP_system.md)
+`m!xptoggle` | Toggles the XP System on / off for the server. see [XP](https://mai-san.ml/docs/XP_system.md)
 
 
 ## Utility
@@ -178,7 +178,7 @@ Command | category | Removal Reason | Status |
 `backdoor` | owner  | Violates Discord ToS | ☠️
 `execute` | owner | Useless Command | ☠️
 `automessage` | setup  | Currently Broken (v3.0.0) | 🛠️
-`whois` | utility  | Violates Discord ToS. Replaced with [`userinfo`](#utilitiy) command | ☠️
+`whois` | utility  | Violates Discord ToS. Replaced with [`userinfo`](#utility) command | ☠️
 
 
  - All of the music command from the previous version, [2.4.0](https://github.com/maisans-maid/Mai/tree/2.4.0/commands/music), has been removed due to the hosting limitations of the bot. These commands, however, are almost complete (for the latest version) but will never be pushed unless the bot gets a proper hosting service. If you forked the latest (3.0.0) version and want to use the music feature, feel free to open an issue. I will create a branch for it if someone is interested once it is complete.

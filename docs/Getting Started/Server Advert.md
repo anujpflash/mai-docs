@@ -1,5 +1,5 @@
 ---
-id: server-adverts
+id: server_adverts
 title: Server Advertisement
 sidebar_label: Server Advertisement
 

@@ -7,14 +7,14 @@ module.exports = {
       items: [
         'Getting Started/welcome',
         {
-          Self_Hosting: [
+          'Self Hosting': [
             'Getting Started/setting_up_your_bot',
             'Getting Started/modifying_the_bot',
             'Getting Started/faqs'
           ]
         },
         {
-          Setting_up_your_Server: [
+          'Setting up your Server': [
             'Getting Started/server_custom_prefix',
             'Getting Started/server_muterole',
             'Getting Started/custom_welcome_message',
@@ -23,7 +23,7 @@ module.exports = {
           ]
         },
         {
-          Setting_up_your_User_Account: [
+          'Setting up your User Account': [
             'Getting Started/linking_to_MAL',
             'Getting Started/linking_to_AL'
           ]
@@ -51,7 +51,7 @@ module.exports = {
       ]
     },
     {
-      type: 'Category',
+      type: 'category',
       label: 'Internal',
       collapsed: true,
       items: [
